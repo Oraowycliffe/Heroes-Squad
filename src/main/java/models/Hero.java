@@ -22,4 +22,13 @@ public class Hero {
     public String getName(){
         return mName;
     }
+    public int getAge(){
+        return mAge;
+    }
+    public String getStrength(){
+        return  mStrength;
+    }
+    public String getWeakness(){
+        return  mWeakness;
+    }
 }
