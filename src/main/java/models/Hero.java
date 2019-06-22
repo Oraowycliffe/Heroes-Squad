@@ -18,7 +18,8 @@ public class Hero {
         this.mWeakness = weakness;
         this.instances.add(this);
         this.mId = instances.size();
-
     }
-
+    public String getName(){
+        return mName;
+    }
 }
