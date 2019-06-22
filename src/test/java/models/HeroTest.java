@@ -18,9 +18,24 @@ public class HeroTest {
         assertEquals(true, testHero instanceof Hero);
     }
     @Test
-    public void RetrieveThename_getsName_name(){
+    public void RetrieveTheName_getsName_name(){
         Hero testHero = new Hero("Spiderman", 20, "Speed","Shy");
         assertEquals("Spiderman", testHero.getName());
+    }
+    @Test
+    public void RetrieveTheAge_getsAge_Age(){
+        Hero testHero = new Hero("Spiderman", 20, "Speed","Shy");
+        assertEquals(20, testHero.getAge());
+    }
+    @Test
+    public void RetrieveTheStrength_getsStrength_Strength(){
+        Hero testHero = new Hero("Spiderman", 20, "Speed","Shy");
+        assertEquals("Speed", testHero.getStrength());
+    }
+    @Test
+    public void RetrieveTheWeakness_getsWeakness_Weakness(){
+        Hero testHero = new Hero("Spiderman", 20, "Speed","Shy");
+        assertEquals("Shy", testHero.getWeakness());
     }
 
     @After
