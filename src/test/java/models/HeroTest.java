@@ -58,6 +58,18 @@ public class HeroTest {
         Hero.clear();
         assertEquals(0, Hero.all().size());
     }
+    @Test
+    public void get_RetrievesSpecificIdOfAHero_1(){
+        Hero.clear();
+        Hero testHero2 = new Hero ("Flash",21, "Lightning","Talks a lot");
+        assertEquals(1, testHero2.getId());
+    }
+    @Test
+    public void find_RetrievesSpecificId_testHero1(){
+        Hero.clear();
+        Hero testHero1 = new Hero("Hulk", 40, "Smashing","Afraid of ladies");
+        assertEquals(testHero1, Hero.find(testHero1.getId()));
+    }
     @After
     public void tearDown() throws Exception {
     }
