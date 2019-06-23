@@ -21,4 +21,15 @@ public class Squad {
 
     }
 
+    public String getName() {
+        return mName;
+    }
+
+    public int getSize() {
+        return mSize;
+    }
+
+    public String getReason() {
+        return mReason;
+    }
 }
