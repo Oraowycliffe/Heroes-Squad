@@ -14,11 +14,29 @@ public class SquadTest {
 
 
     @Test
-    public void instance_intanciatesCorrectly_true(){
+    public void instance_instanciateCorrectly_true(){
         Squad testSquad = new Squad("Furious-Four", 4, "Defence");
         assertEquals(true, testSquad instanceof  Squad);
-
     }
+
+    @Test
+    public void getName_retrievesNameOfSquad_name(){
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        assertEquals("Furious-Four", testSquad.getName());
+    }
+    @Test
+    public void getSize_retrievesSizeOfSquad_size(){
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        assertEquals(4, testSquad.getSize());
+    }
+    @Test
+    public void getReason_retrievesReasonOfSquadFormation_reason(){
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        assertEquals("Defence", testSquad.getReason());
+    }
+
+
+
     @After
     public void tearDown() throws Exception {
     }
