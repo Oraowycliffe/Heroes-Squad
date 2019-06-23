@@ -31,4 +31,18 @@ public class Hero {
     public String getWeakness(){
         return  mWeakness;
     }
+
+    public static List <Hero> all(){
+         return instances;
+    }
+    public static void clear() {
+         instances.clear();
+    }
+    public int getId(){
+        return mId;
+    }
+
+//    public static Hero find(int id){
+//        return instances.get(id-1);
+//    }
 }
