@@ -48,7 +48,17 @@ public class SquadTest {
         Squad.clear();
         assertEquals(0, Squad.all().size());
     }
-
+    @Test
+    public void getId_retrievesTheIdOfSquad_1(){
+        Squad.clear();
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        assertEquals(1, testSquad.getId());
+    }
+    @Test
+    public void find_retrievesAnInstanceGivenTheId_testHero(){
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        assertEquals(testSquad, Squad.find(testSquad.getId()));
+    }
 
 
     @After
