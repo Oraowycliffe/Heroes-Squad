@@ -59,11 +59,29 @@ public class SquadTest {
         Squad testSquad = new Squad("Furious-Four", 4, "Defence");
         assertEquals(testSquad, Squad.find(testSquad.getId()));
     }
+
     @Test
     public void getHeroes_returnsNoHeroAtStart_0(){
         Squad.clear();//removes all the instances of Squad
         Squad testSquad = new Squad("Furious-Four", 4, "Defence");
         assertEquals(0, testSquad.getHeroes().size());
+    }
+    @Test
+    public void addHero_AddsNewHeroToTheSquad_1(){
+        Squad.clear();
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        Hero testHero = new Hero("Spider-man", 20, "JUmping", "Shy");
+        testSquad.addHero(testHero);
+        assertEquals(1,testSquad.getHeroes().size());
+    }
+    @Test
+    public void heroExist_ensuresOneHeroAtATime_true(){
+        Squad.clear();
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        Hero testHero = new Hero("Spider-man", 20, "JUmping", "Shy");
+        testSquad.addHero(testHero);
+        assertEquals(true, testSquad.heroExist(testHero));
+
 
     }
 
