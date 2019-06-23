@@ -59,6 +59,13 @@ public class SquadTest {
         Squad testSquad = new Squad("Furious-Four", 4, "Defence");
         assertEquals(testSquad, Squad.find(testSquad.getId()));
     }
+    @Test
+    public void getHeroes_returnsNoHeroAtStart_0(){
+        Squad.clear();//removes all the instances of Squad
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        assertEquals(0, testSquad.getHeroes().size());
+
+    }
 
 
     @After
