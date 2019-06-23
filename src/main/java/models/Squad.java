@@ -41,4 +41,12 @@ public class Squad {
     public String getReason() {
         return mReason;
     }
+
+    public int getId() {
+        return mId;
+    }
+
+    public static Squad find(int id) {
+        return instances.get(id-1);
+    }
 }
