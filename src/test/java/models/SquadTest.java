@@ -34,6 +34,20 @@ public class SquadTest {
         Squad testSquad = new Squad("Furious-Four", 4, "Defence");
         assertEquals("Defence", testSquad.getReason());
     }
+    @Test
+    public void all_retrievesAllOfSquadInstances_true(){
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        Squad testSquad2 = new Squad("Hawaii-Five", 5, "Kill");
+        assertEquals(true, Squad.all().contains(testSquad));
+        assertEquals(true, Squad.all().contains(testSquad2));
+    }
+    @Test
+    public void clear_clearsThArrayListContainingTheSquadInstances_0(){
+        Squad testSquad = new Squad("Furious-Four", 4, "Defence");
+        Squad testSquad2 = new Squad("Hawaii-Five", 5, "Kill");
+        Squad.clear();
+        assertEquals(0, Squad.all().size());
+    }
 
 
 
