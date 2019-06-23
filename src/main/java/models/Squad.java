@@ -1,5 +1,4 @@
 package models;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -49,8 +48,28 @@ public class Squad {
     public static Squad find(int id) {
         return instances.get(id-1);
     }
+    public void addHero(Hero hero) {
+        mHeroes.add(hero);
+    }
     public List <Hero> getHeroes(){
         return  mHeroes;
 
     }
+
+    //Assigning an individual Hero only one squad at a time
+    public boolean heroExist(Hero testHero) {
+        //place the existence of a hero in a squad as false initially
+        boolean exists = false;
+        // loop through the Squad and for each instances of the squad , also loop through the heroes
+        for(Squad squad: instances){
+            for(Hero hero: squad.getHeroes()){
+                //once done , check if the name of the Incoming hero is similar to the any of the Hero names given then exists state changes to true
+                if (hero.getName().equals(testHero.getName())) {
+                    exists = true;
+                }
+            }
+        }
+        return exists;
+    }
+
 }
