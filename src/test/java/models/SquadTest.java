@@ -81,7 +81,7 @@ public class SquadTest {
         Hero testHero = new Hero("Spider-man", 20, "JUmping", "Shy");
         testSquad.addHero(testHero);
         assertEquals(true, testSquad.heroExist(testHero));
-        
+
     }
 
 
