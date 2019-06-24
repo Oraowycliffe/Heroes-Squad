@@ -23,16 +23,27 @@ public class App {
 
         post("/heroes/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-//            Squad squad = Squad.find(Integer.parseInt(request.queryParams("squadId")));
             String name = request.queryParams("name");
             int age = Integer.parseInt(request.queryParams("age"));
             String power = request.queryParams("strength");
             String weakness = request.queryParams("weakness");
             Hero newHero = new Hero(name, age, power, weakness);
-//            model.put("squad", squad);
-//            model.put("template", "templates/squad-heroes-success.hbs");
             return new ModelAndView(model,"success-hero.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/squad/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "squad-form.hbs");
+        },new HandlebarsTemplateEngine());
+
+        post("/squad/success", (request, response) -> {
+            Map <String, Object> model = new HashMap<>();
+            String name =request.queryParams("squadName");
+            int size = Integer.parseInt(request.queryParams("size"));
+            String mission = request.queryParams("mission");
+            Squad newSquad = new Squad(name,size,mission);
+            return  new ModelAndView(model,"success-squad.hbs");
+        },new HandlebarsTemplateEngine());
 
 
     }
