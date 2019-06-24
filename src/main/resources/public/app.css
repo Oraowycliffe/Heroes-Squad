@@ -30,7 +30,7 @@ a{
     font-size: 13px;
 }
 body{
-    background-image: url("/images/background.jpg");
+    background-image: url("/images/background2.jpg");
     background-color: #cccccc;
     height: 100vh;
     background-position: top;
@@ -75,8 +75,11 @@ body{
 .input{
     padding-top: 50px;
     color: white;
-    float: left;
+    float: right;
     margin-left: 10%;
+}
+.input::placeholder{
+    color:white;
 }
 .input input[type = text]{
     width: 300px;
