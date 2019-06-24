@@ -49,14 +49,14 @@ body{
     margin-right: 25%;
 }
 .homepage p{
-    font-family: 'Bilbo Swash Caps', cursive;
+    font-family: 'Aguafina Script', cursive;
     font-size: 22px;
     padding-bottom: 10px;
 }
 .homepage h3{
     font-size: 40px;
 }
-.homepage input{
+.homepage>a>input{
     background-color: transparent;
     color: white;
     border: 2px solid white;
