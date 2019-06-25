@@ -1,0 +1,35 @@
+{{#partial "content"}}
+
+<div class="slide-container">
+  
+<div class="slide-container">
+  
+        <div class="wrapper">
+          <div class="clash-card barbarian">
+            <div class="clash-card__image clash-card__image--barbarian">
+              <img src="/images/hero.jpg" alt="barbarian" width="100%" />
+            </div>
+            <div class="clash-card__level clash-card__level--barbarian">Squad</div>
+            <div class="clash-card__unit-name">The {{squadName}}</div><br>
+            <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+              <div class="one-third">
+                <div class="stat">{{size}}<sup>S</sup></div>
+                <div class="stat-value">size</div>
+              </div>
+      
+              <div class="one-third no-border">
+                <div class="stat">{{reason}}</div>
+                <div class="stat-value">Mission</div>
+              </div>
+      
+            </div>
+      
+          </div> <!-- end clash-card barbarian-->
+        </div> <!-- end wrapper -->
+        
+<a href="/"><button type="submit" class="btn btn-primary" aria-pressed="false" autocomplete="off">
+        Home
+      </button></a>
+{{/partial}}
+
+{{> layout.hbs}}
