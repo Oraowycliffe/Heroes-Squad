@@ -5,10 +5,15 @@
    Success !
     </h1>
 <p>
-       Your Squad has been Created sucessfully
+       {{squadName}} Squad has been Created sucessfully 
+
 </p>
-<a href="/squad/new"><button type="submit" class="btn btn-primary" aria-pressed="false" autocomplete="off">
-        Create Squad
+
+<a href="/squad/details/{{id}}"><button type="submit" class="btn btn-primary" aria-pressed="false" autocomplete="off">
+        View Details
+      </button></a>
+<a href="/"><button type="submit" class="btn btn-primary" aria-pressed="false" autocomplete="off">
+        Go back
       </button></a>
 </div>
 {{/partial}}

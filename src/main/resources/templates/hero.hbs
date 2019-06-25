@@ -1,0 +1,40 @@
+{{#partial "content"}}
+
+<div class="slide-container">
+  
+        <div class="wrapper">
+          <div class="clash-card barbarian">
+            <div class="clash-card__image clash-card__image--barbarian">
+              <img src="/images/superman.png" alt="barbarian" />
+            </div>
+            <div class="clash-card__level clash-card__level--barbarian">Hero</div>
+            <div class="clash-card__unit-name"> 
+ {{name}}
+
+</div><br>
+            <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+              <div class="one-third">
+                <div class="stat">{{age}}<sup>S</sup></div>
+                <div class="stat-value">Years</div>
+              </div>
+      
+              <div class="one-third">
+                <div class="stat">{{strength}}</div>
+                <div class="stat-value">Strength</div>
+              </div>
+      
+              <div class="one-third no-border">
+                <div class="stat">{{weakness}}</div>
+                <div class="stat-value">Weakness</div>
+              </div>
+      
+            </div>
+      
+          </div> 
+        </div> 
+<a href="/squad/form"><button type="submit" class="btn btn-primary" aria-pressed="false" autocomplete="off">
+        Create Squad
+      </button></a>
+{{/partial}}
+
+{{> layout.hbs}}

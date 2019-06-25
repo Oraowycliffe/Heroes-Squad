@@ -1,0 +1,102 @@
+*{
+    transition: all 0.5s ease-out;
+}
+img{
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    padding-right: 40px;
+}
+.navba{
+    height: 60px;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+ul{
+    float: right;
+    margin-right: 40px;
+    padding-top: 20px;
+    font-family: 'Cormorant SC', serif;
+}
+img{
+    margin-left: 40px;
+}
+a{
+    color: white;
+    font-size: 13px;
+}
+body{
+    background-image: url("/images/back2.jpg");
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+  }
+.homepage{
+    padding-top: 170px;
+    width: 600px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.homepage p{
+    font-family: 'Aguafina Script', cursive;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.homepage h3{
+    font-size: 40px;
+}
+.homepage>a>input{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+}
+.navba a:hover{
+ color: red;
+ text-decoration: none;
+}
+.homepage input:hover{
+    background-color: rgb(122, 21, 21);
+    box-shadow:0px 0px rgb(122, 21, 21)
+}
+.input{
+    padding-top: 50px;
+    color: white;
+    float: right;
+    margin-left: 10%;
+}
+.input::placeholder{
+    color:white;
+}
+.input input[type = text]{
+    width: 300px;
+    padding: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(131, 76, 76);
+    color: white;
+
+}
+.input button{
+    width: 340px;
+    margin-top: 20px;
+}
+.succes{
+    color: white;
+}
+.succes{
+    margin-top: 60px;
+}
